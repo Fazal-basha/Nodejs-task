@@ -1,0 +1,25 @@
+html
+    link(rel="stylesheet",href="../style.css")
+    head
+        title pug document
+    body
+        h1 pug is working
+        div.table
+            table
+                thead
+                    th book_id
+                    th Book_name                  
+                    th book_category
+                    th book_price 
+                    th No_Of_Pages
+                    
+                tbody
+                    each x in people
+                        tr
+                            td= x.book_id  
+                            td= x.Book_name
+                            td= x.book_category
+                            td= x.book_price
+                            td= x.no_of_pages 
+
+            h3.alert.alert-dark Programmed by #{programmer}
